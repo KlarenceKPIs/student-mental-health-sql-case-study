@@ -93,8 +93,8 @@ ORDER BY stay DESC;
 ## 📁 Files
 
 - `notebook.ipynb` – Jupyter notebook with full SQL analysis and notes
-- `students.csv` – Dataset
-- `mentalheal.jpg` – Image for documentation
+- `students.csv` – Dataset used in the analysis
+- `mentalheal.jpg` – Visual header for the documentation
 - `README.md` – This documentation
 
 ---
