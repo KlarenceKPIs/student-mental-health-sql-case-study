@@ -6,9 +6,10 @@ A SQL case study exploring the relationship between international student status
 **Project Type**: SQL Case Study  
 **Source**: [DataCamp - Associate Data Analyst in SQL track]  
 **Tools**: PostgreSQL, Jupyter Notebook
+**Files Included**: `Notebook.ipynb`, `students.csv`, `mentalhealth.jpg`
 
 ---
-
+![Mental Health](mentalhealth.jpg)
 ## 📌 Project Overview
 
 Does going to university in a different country affect your mental health?
@@ -21,21 +22,21 @@ In this project, I use SQL to explore whether the data supports these findings a
 
 ---
 
-## 🧾 Dataset Information
+## 🧾 Dataset Summary
 
-The `students` table includes:
+The dataset (`students.csv`) includes the following variables:
 
 | Column         | Description                                               |
 |----------------|-----------------------------------------------------------|
-| `inter_dom`    | Type of student: International or Domestic                |
+| `inter_dom`    | Student type: International or Domestic                   |
 | `japanese_cate`| Japanese language proficiency                             |
 | `english_cate` | English language proficiency                              |
 | `academic`     | Academic level (Undergrad / Graduate)                     |
-| `age`          | Age of the student                                        |
+| `age`          | Student age                                               |
 | `stay`         | Length of stay in years                                   |
-| `todep`        | Total score of depression (PHQ-9 test)                    |
-| `tosc`         | Total score of social connectedness (SCS test)           |
-| `toas`         | Total score of acculturative stress (ASISS test)         |
+| `todep`        | Total depression score (PHQ-9)                             |
+| `tosc`         | Total social connectedness score (SCS)                    |
+| `toas`         | Total acculturative stress score (ASISS)                  |
 
 ---
 
@@ -49,6 +50,25 @@ The Jupyter notebook includes:
 > 📄 **File:** [`mental_health_students_analysis.ipynb`](./mental_health_students_analysis.ipynb)
 
 ---
+## 🧠 Key Analysis
+
+The notebook explores:
+- Trends in **depression (PHQ-9)** based on student type and length of stay
+- How **social connectedness** and **acculturative stress** relate to mental health
+- Whether longer stays reduce stress and improve social bonding
+
+```sql
+-- Sample Query:
+SELECT 
+  stay,
+  COUNT(inter_dom) AS count_int,
+  ROUND(AVG(todep), 2) AS average_phq, 
+  ROUND(AVG(tosc), 2) AS average_scs, 
+  ROUND(AVG(toas), 2) AS average_as
+FROM students
+WHERE inter_dom = 'Inter'
+GROUP BY stay
+ORDER BY stay DESC;
 
 ## 📊 Key Findings
 
