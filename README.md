@@ -57,7 +57,7 @@ The notebook explores:
 - How **social connectedness** and **acculturative stress** relate to mental health
 - Whether longer stays reduce stress and improve social bonding
 
-```md
+
 ```sql
 -- Sample Query:
 SELECT 
@@ -70,6 +70,7 @@ FROM students
 WHERE inter_dom = 'Inter'
 GROUP BY stay
 ORDER BY stay DESC;
+```
 
 ---
 
