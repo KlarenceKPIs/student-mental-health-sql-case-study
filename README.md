@@ -47,7 +47,7 @@ The Jupyter notebook includes:
 - Inline visualizations (optional)
 - Commentary on observations and conclusions
 
-> 📄 **File:** [`mental_health_students_analysis.ipynb`](./mental_health_students_analysis.ipynb)
+> 📄 **File:** [`notebook.ipynb`](./notebook.ipynb)
 
 ---
 ## 🧠 Key Analysis
