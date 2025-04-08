@@ -92,7 +92,9 @@ ORDER BY stay DESC;
 
 ## 📁 Files
 
-- `mental_health_students_analysis.ipynb` – Jupyter notebook with full SQL analysis and notes
+- `notebook.ipynb` – Jupyter notebook with full SQL analysis and notes
+- `students.csv` – Dataset
+- `mentalheal.jpg` – Image for documentation
 - `README.md` – This documentation
 
 ---
