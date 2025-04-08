@@ -70,6 +70,8 @@ WHERE inter_dom = 'Inter'
 GROUP BY stay
 ORDER BY stay DESC;
 
+---
+
 ## 📊 Key Findings
 
 - **Higher depression scores** are associated with shorter stays among international students.
